@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* The design is light-only. Without these two lines the page background is
+   whatever the visitor's browser defaults to, which can turn dark. */
+html {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #fff;
+}
