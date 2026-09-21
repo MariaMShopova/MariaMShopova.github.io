@@ -12,7 +12,7 @@ export const siteConfig = {
   },
   // Cookie-free visitor counting via GoatCounter (https://www.goatcounter.com).
   // Paste your GoatCounter site code here to switch it on; leave empty for off.
-  analytics: { goatcounterCode: "" },
+  analytics: { goatcounterCode: "mariamshopova" },
   aboutMe:
     "I'm a seasoned strategic advisor with over six years of experience across professional services, consulting, digital transformation and program governance. My work sits where operations, data and technology meet. In practice, that means turning fragmented information and scattered data into one clear picture that senior leaders can act on.\n\nI build practical solutions, designed to apply across a wide range of situations, both in my day-to-day professional roles and through the advisory engagements I have with external organisations. I design them with Claude Code as my preferred AI pair-programmer, though I've also worked with OpenAI's equivalent. These solutions are particularly suited to the needs of senior executives facing questions in which strategy, operating models and execution need to come together. I bring a pragmatic perspective to complex organisational questions, connecting strategic intent with the systems, processes and decisions required to make it work in practice.",
   // Optional short tag row under the bio. The full list lives in skillGroups.
