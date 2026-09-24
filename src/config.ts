@@ -96,17 +96,19 @@ export const siteConfig = {
     },
     {
       name: "Ūtil",
-      status: "In development",
+      status: "Live",
       description:
-        "A standalone team-utilisation tool in the same suite as Lucid. Upload an activity feed and an employee roster and Ūtil works out utilisation for each person, role and team, based on the hours they were actually available to work.",
+        "A standalone team-utilisation tool in the same suite as Lucid. Upload an activity feed and Ūtil builds your roster automatically and works out utilisation for each person, role, team and manager, based on the hours they were actually available to work.",
       highlights: [
-        "Calculation engine: billable hours divided by available hours, measured against each person's target",
-        "Available hours account for contracted hours, work schedules, approved leave and both public and company holidays",
-        "Public holidays pulled automatically for 100+ countries, with manager-maintained custom holidays on top",
-        "Fuzzy name matching and column matching reconcile roster and activity files that don't line up perfectly",
+        "Calculation engine: billable hours divided by available hours, accounting for contracted hours, work schedules, approved leave and both public and company holidays",
+        "AI-generated insights alongside a chart dashboard covering utilisation by person, team, role, location and manager, plus billable, non-billable and PTO breakdowns",
+        "Global and per-chart date-range filtering, with every chart exportable as a PNG",
+        "Fuzzy name and column matching reconcile roster and activity files that don't line up perfectly, auto-building the roster straight from an activity upload",
         "One login across the suite, with its own separate database schema so Ūtil's data never mixes with Lucid's",
       ],
-      skills: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Tremor charts"],
+      link: "https://util-tracker.vercel.app",
+      linkLabel: "Try the live app",
+      skills: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Claude API"],
     },
   ] as {
     name: string;
