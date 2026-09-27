@@ -4,6 +4,7 @@ import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasGlobalLeadership = siteConfig.globalLeadership && siteConfig.globalLeadership.length > 0;
 const hasSkills = siteConfig.skillGroups && siteConfig.skillGroups.length > 0;
 ---
 
@@ -138,6 +139,16 @@ const hasSkills = siteConfig.skillGroups && siteConfig.skillGroups.length > 0;
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
                 Education
+              </a>
+            )
+          }
+          {
+            hasGlobalLeadership && (
+              <a
+                href="#global-leadership"
+                class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                Leadership
               </a>
             )
           }

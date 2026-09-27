@@ -201,7 +201,7 @@ export const siteConfig = {
       location: "United Kingdom",
       dateRange: "2019",
       summary:
-        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch. Beyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society.",
+        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch. Beyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society. During this time, I also served as Associate Regional Director for Europe at the International Youth Federation, shaping the organisation’s 2021–2026 global strategy and building a 22-person leadership team across seven countries, spanning sustainability, youth participation, digital upskilling and equality.",
     },
   ] as {
     school: string;
@@ -211,4 +211,32 @@ export const siteConfig = {
     summary?: string;
     achievements?: string[];
   }[],
+  // A flat list of external leadership/advisory engagements: org, location,
+  // and a short description of the role or what was achieved.
+  globalLeadership: [
+    {
+      org: "Global Shapers Community",
+      location: "Bulgaria",
+      description:
+        "Built and led the Sofia hub from five volunteers into a fully operational not-for-profit, growing the active team to 30+ and securing a multi-year partnership with a Fortune 500 company. Progressed through three leadership appointments: Vice Curator (2020/21), Curator (2021/22) and Sustainability & Impact Officer (2023/24).",
+    },
+    {
+      org: "World Economic Forum",
+      location: "Switzerland",
+      description:
+        "Selected to take the plenary stage at the 10th anniversary of the Global Shapers Community, delivering a keynote and contributing to discussions with an international audience of emerging leaders and global stakeholders.",
+    },
+    {
+      org: "BMW Group",
+      location: "France / Germany",
+      description:
+        "Invited to two consecutive rad°hub dialogues in Paris and Munich as a youth leadership voice on sustainability, the circular economy and digitalisation, shaping agendas and leading cross-sector discussions alongside business and policy leaders.",
+    },
+    {
+      org: "Google Leadership Academy",
+      location: "United Kingdom",
+      description:
+        "Selected for Google’s leadership programme for emerging leaders, contributing to and leading discussions on leadership, innovation and social impact at the Google Academy in London.",
+    },
+  ] as { org: string; location: string; description: string }[],
 };
