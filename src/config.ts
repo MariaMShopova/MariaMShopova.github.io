@@ -201,7 +201,7 @@ export const siteConfig = {
       location: "United Kingdom",
       dateRange: "2019",
       summary:
-        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch, and was elected as a researcher for the International Student Conference in Japan, publishing a paper titled “Happiness, Well-Being and Prosperity: The Case of Japan and the Kingdom of Bhutan”. The paper was elected to serve as the basis of a policy proposal addressed to the Japanese government. Beyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society.",
+        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch, and was elected as a researcher for the International Student Conference in Japan, publishing a paper titled “Happiness, Well-Being and Prosperity: The Case of Japan and the Kingdom of Bhutan”. The paper was elected to serve as the basis of a policy proposal addressed to the Japanese government.\n\nBeyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society.",
     },
   ] as {
     school: string;
@@ -224,17 +224,17 @@ export const siteConfig = {
       org: "International Youth Federation",
       location: "United Kingdom",
       description:
-        "As Associate Regional Director, Europe, shaped the organisation’s 2021–2026 global strategy and built a 22-person leadership team across seven countries, spanning sustainability, youth participation, digital upskilling and equality.",
+        "As the Associate Regional Director for Europe, I shaped the organisation’s 2021–2026 global strategy and recruited and trained a 22-person leadership team across seven countries. My focus areas within the organisation were sustainability, youth participation, digital upskilling and equality.",
     },
     {
       org: "World Economic Forum",
       location: "Switzerland",
       description:
-        "Selected to take the plenary stage at the 10th anniversary of the Global Shapers Community, delivering a keynote and contributing to discussions with an international audience of emerging leaders and global stakeholders.",
+        "Invited to take the plenary stage at the 10th anniversary of the Global Shapers Community, delivering a keynote and contributing to discussions with an international audience of emerging leaders and global stakeholders.",
     },
     {
       org: "BMW Group",
-      location: "France / Germany",
+      location: "France · Germany",
       description:
         "Invited to two consecutive rad°hub dialogues in Paris and Munich as a youth leadership voice on sustainability, the circular economy and digitalisation, shaping agendas and leading cross-sector discussions alongside business and policy leaders.",
     },

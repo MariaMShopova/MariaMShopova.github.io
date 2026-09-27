@@ -48,9 +48,13 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                   </div>
 
                   {edu.summary && (
-                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                      {edu.summary}
-                    </p>
+                    <div class="space-y-3">
+                      {edu.summary.split("\n\n").map((paragraph) => (
+                        <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                   )}
 
                   {edu.achievements && edu.achievements.length > 0 && (
