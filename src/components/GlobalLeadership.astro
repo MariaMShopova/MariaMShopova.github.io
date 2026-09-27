@@ -19,22 +19,22 @@ const hasGlobalLeadership = siteConfig.globalLeadership && siteConfig.globalLead
           </div>
 
           <div class="lg:col-span-8">
-            <ul class="space-y-6">
+            <div class="space-y-8">
               {siteConfig.globalLeadership.map((item) => (
-                <li class="flex items-start">
-                  <span
-                    class="inline-block w-1.5 h-1.5 rounded-full mt-2.5 mr-4 flex-shrink-0"
-                    style={`background-color: ${siteConfig.accentColor}`}
-                  />
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                  <p
+                    class="text-base sm:text-lg mb-4"
+                    style={`color: ${siteConfig.accentColor}`}
+                  >
+                    {item.org}
+                    <span class="text-gray-500 text-sm sm:text-base"> · {item.location}</span>
+                  </p>
                   <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    <span class="font-semibold text-gray-900">{item.org}</span>
-                    <span class="text-gray-500"> — {item.location}</span>
-                    {": "}
                     {item.description}
                   </p>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

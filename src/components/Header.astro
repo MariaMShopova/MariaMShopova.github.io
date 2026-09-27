@@ -47,18 +47,6 @@ const hasSkills = siteConfig.skillGroups && siteConfig.skillGroups.length > 0;
         )
       }
       {
-        hasEducation && (
-          <li>
-            <a
-              href="#education"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Education
-            </a>
-          </li>
-        )
-      }
-      {
         hasGlobalLeadership && (
           <li>
             <a
@@ -66,6 +54,18 @@ const hasSkills = siteConfig.skillGroups && siteConfig.skillGroups.length > 0;
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Leadership
+            </a>
+          </li>
+        )
+      }
+      {
+        hasEducation && (
+          <li>
+            <a
+              href="#education"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Education
             </a>
           </li>
         )
