@@ -14,7 +14,7 @@ export const siteConfig = {
   // Paste your GoatCounter site code here to switch it on; leave empty for off.
   analytics: { goatcounterCode: "mariamshopova" },
   aboutMe:
-    "I'm a seasoned strategic advisor with over six years of experience across professional services, consulting, digital transformation and program governance. My work sits where operations, data and technology meet. In practice, that means turning fragmented information and scattered data into one clear picture that senior leaders can act on.\n\nI build practical solutions, designed to apply across a wide range of situations, both in my day-to-day professional roles and through the advisory engagements I have with external organisations. I design them with Claude Code as my preferred AI pair-programmer, though I've also worked with OpenAI's equivalent. These solutions are particularly suited to the needs of senior executives facing questions in which strategy, operating models and execution need to come together. I bring a pragmatic perspective to complex organisational questions, connecting strategic intent with the systems, processes and decisions required to make it work in practice. Outside work, I recharge outdoors — hiking and kayaking — and bring the same discipline to a demanding daily training routine.",
+    "I'm a seasoned strategic advisor with over six years of experience across professional services, consulting, digital transformation and program governance. My work sits where operations, data and technology meet. In practice, that means turning fragmented information and scattered data into one clear picture that senior leaders can act on.\n\nI build practical solutions, designed to apply across a wide range of situations, both in my day-to-day professional roles and through the advisory engagements I have with external organisations. I design them with Claude Code as my preferred AI pair-programmer, though I've also worked with OpenAI's equivalent. These solutions are particularly suited to the needs of senior executives facing questions in which strategy, operating models and execution need to come together. I bring a pragmatic perspective to complex organisational questions, connecting strategic intent with the systems, processes and decisions required to make it work in practice. Outside work, I recharge outdoors - hiking, kayaking and simply spending time in nature. I bring the same discipline to a demanding daily workout routine, focused on weightlifting and building cardio endurance.",
   // Optional short tag row under the bio. The full list lives in skillGroups.
   skills: [] as string[],
   skillGroups: [
@@ -114,9 +114,9 @@ export const siteConfig = {
       name: "Chattr",
       status: "In Development",
       description:
-        "A unified inbox for Gmail, Outlook, Slack, Microsoft Teams and Telegram — the third app in the same suite as Lucid and Ūtil. Connect every real messaging account you use and read, and reply to, all of it from one calm inbox, without losing track of which identity you're replying from.",
+        "A unified inbox for Gmail, Outlook, Slack, Microsoft Teams and Telegram - the third app in the same suite as Lucid and Ūtil. Connect every real messaging account you use and read, and reply to, all of it from one calm inbox, without losing track of which identity you're replying from.",
       highlights: [
-        "Real OAuth/API integrations for all five platforms, each built against the provider's own official docs — no scraping, no stored passwords",
+        "Real OAuth/API integrations for all five platforms, each built against the provider's own official docs - no scraping, no stored passwords",
         "A capability matrix per provider so the UI only ever offers what that platform's API actually supports",
         "Encrypted token storage and per-app database isolation, since this app handles real private message content",
         "Reply identity protection: every composer makes explicit which connected account a message will send from",
@@ -139,44 +139,44 @@ export const siteConfig = {
     {
       company: "Brandwatch LLC",
       location: "EU (Remote)",
-      dateRange: "May 2023 – Aug 2026",
+      dateRange: "May 2023 - Aug 2026",
       roles: [
         {
           title: "Manager, Strategy & Operations",
-          dateRange: "May 2023 – Aug 2026",
+          dateRange: "May 2023 - Aug 2026",
           summary:
-            "I was in charge of the strategic direction and day-to-day operations of a global professional services department at a leading digital consumer intelligence product company, serving customers across EMEA, APAC and North America. My remit was global, so every process, target and decision had to work across regions, time zones and service models. I owned the operational delivery and strategic direction end to end: ensuring customer commitments were met, revenue and utilisation targets were achieved, customers remained satisfied and executives had a clear view of a $20M+ client portfolio through monthly P&L reviews and quarterly business reviews.\n\nI also led the technology agenda from an operational perspective – I shaped the department's AI strategy and led the productisation of an AI reporting solution that cut client report delivery time by about 70%. I brought IT, HR, RevOps, Customer Success and Finance together to turn scattered data into 40+ dashboards and I built the utilisation model that gave us one view of how busy every person, role and team really was across 15 geographies.",
+            "I was in charge of the strategic direction and day-to-day operations of a global professional services department at a leading digital consumer intelligence product company, serving customers across EMEA, APAC and North America. My remit was global, so every process, target and decision had to work across regions, time zones and service models. I owned the operational delivery and strategic direction end to end: ensuring customer commitments were met, revenue and utilisation targets were achieved, customers remained satisfied and executives had a clear view of a $20M+ client portfolio through monthly P&L reviews and quarterly business reviews.\n\nI also led the technology agenda from an operational perspective - I shaped the department's AI strategy and led the productisation of an AI reporting solution that cut client report delivery time by about 70%. I brought IT, HR, RevOps, Customer Success and Finance together to turn scattered data into 40+ dashboards and I built the utilisation model that gave us one view of how busy every person, role and team really was across 15 geographies.",
         },
       ],
     },
     {
       company: "S&G Technology Services (acquired by Sirma)",
       location: "EU (Remote)",
-      dateRange: "Jan 2020 – Apr 2023",
+      dateRange: "Jan 2020 - Apr 2023",
       intro:
         "Over three years I grew from consultant to leading the program governance and operations function across the company, taking on more people, bigger programs and a wider remit at each step.",
       roles: [
         {
           title: "Program Governance & Operations Lead",
-          dateRange: "Feb 2022 – Apr 2023",
+          dateRange: "Feb 2022 - Apr 2023",
           summary:
             "I led a team of 10+ delivering large fintech and financial-services software programs, with a 4.6 out of 5 customer satisfaction score and 16% higher customer lifetime value. Beyond delivery, I built the company's project governance standards and ran the PMO and change office that rolled them out across three departments and 170+ people. I also advised go-to-market leadership on how to package our expertise into productised offerings, which lifted lead-to-customer conversion by about 60%.",
         },
         {
           title: "Senior Manager, Digital Transformation",
-          dateRange: "Dec 2021 – Jan 2022",
+          dateRange: "Dec 2021 - Jan 2022",
           summary:
             "I led a multidisciplinary team of consultants, engineers, analysts, architects and designers across 10+ client engagements worth around €3M in revenue, balancing workloads, dependencies and contingencies. I also took full ownership of one workstream in a major transformation program, from planning and budget to reporting and stakeholder management.",
         },
         {
           title: "Digital Transformation Manager",
-          dateRange: "Feb 2021 – Nov 2021",
+          dateRange: "Feb 2021 - Nov 2021",
           summary:
             "I ran project teams of four to six people, turning client ambitions into delivery plans that covered scope, process design, risk and change, while keeping programs on time and on budget. I led the executive conversations with clients and internal leadership, presenting progress, flagging risks early and bringing solutions and workarounds.",
         },
         {
           title: "Consultant",
-          dateRange: "Jan 2020 – Jan 2021",
+          dateRange: "Jan 2020 - Jan 2021",
           summary:
             "I started out digging into program data and feedback to see what was really being delivered and where the opportunities were, using the classic consulting toolkit of client interviews, workshops, gap analysis and process mapping. I also acted as the bridge between R&D and corporate stakeholders, helping turn product vision into user stories and feature specs with commercial value in mind.",
         },
@@ -224,7 +224,7 @@ export const siteConfig = {
       org: "International Youth Federation",
       location: "United Kingdom",
       description:
-        "Shaped the organisation’s 2021–2026 global strategy as Associate Regional Director for Europe. Recruited and trained a 22-person leadership team across seven countries, with a focus on sustainability, youth participation, digital upskilling and equality.",
+        "Shaped the organisation’s 2021-2026 global strategy as Associate Regional Director for Europe. Recruited and trained a 22-person leadership team across seven countries, with a focus on sustainability, youth participation, digital upskilling and equality.",
     },
     {
       org: "World Economic Forum",
