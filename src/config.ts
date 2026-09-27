@@ -201,7 +201,7 @@ export const siteConfig = {
       location: "United Kingdom",
       dateRange: "2019",
       summary:
-        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch. Beyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society. During this time, I also served as Associate Regional Director for Europe at the International Youth Federation, shaping the organisation’s 2021–2026 global strategy and building a 22-person leadership team across seven countries, spanning sustainability, youth participation, digital upskilling and equality.",
+        "Studied at Imperial College London, a global top-10 university, where I earned the Imperial Business Case Award for the strongest overall performance in the Entrepreneurship module, including the final business case pitch. Beyond the classroom, I took part in international immersion programmes in New York and Lisbon, gaining first-hand exposure to companies and institutions including Morgan Stanley, the New York Stock Exchange, Bloomberg, IBM Watson, N26, the Mayor’s Office of New York City and Feedzai. Alongside my academic work, I was also an active member of the Consulting Club, Women in Business Society and Imperial Investment Society. In 2018, I was elected as a researcher for the 65th International Student Conference in Japan, presenting on economic growth and income inequality; my paper, “Happiness, Well-Being and Prosperity: The Case of Japan and the Kingdom of Bhutan,” was published as a policy proposal to the Japanese government.",
     },
   ] as {
     school: string;
@@ -219,6 +219,12 @@ export const siteConfig = {
       location: "Bulgaria",
       description:
         "Built and led the Sofia hub from five volunteers into a fully operational not-for-profit, growing the active team to 30+ and securing a multi-year partnership with a Fortune 500 company. Progressed through three leadership appointments: Vice Curator (2020/21), Curator (2021/22) and Sustainability & Impact Officer (2023/24).",
+    },
+    {
+      org: "International Youth Federation",
+      location: "United Kingdom",
+      description:
+        "As Associate Regional Director, Europe, shaped the organisation’s 2021–2026 global strategy and built a 22-person leadership team across seven countries, spanning sustainability, youth participation, digital upskilling and equality.",
     },
     {
       org: "World Economic Forum",
