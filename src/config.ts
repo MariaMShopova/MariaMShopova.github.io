@@ -110,6 +110,19 @@ export const siteConfig = {
       linkLabel: "Try the live app",
       skills: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Claude API"],
     },
+    {
+      name: "Chattr",
+      status: "In Development",
+      description:
+        "A unified inbox for Gmail, Outlook, Slack, Microsoft Teams and Telegram — the third app in the same suite as Lucid and Ūtil. Connect every real messaging account you use and read, and reply to, all of it from one calm inbox, without losing track of which identity you're replying from.",
+      highlights: [
+        "Real OAuth/API integrations for all five platforms, each built against the provider's own official docs — no scraping, no stored passwords",
+        "A capability matrix per provider so the UI only ever offers what that platform's API actually supports",
+        "Encrypted token storage and per-app database isolation, since this app handles real private message content",
+        "Reply identity protection: every composer makes explicit which connected account a message will send from",
+      ],
+      skills: ["Next.js", "TypeScript", "Supabase", "OAuth", "Gmail API", "Microsoft Graph", "Slack API"],
+    },
   ] as {
     name: string;
     status?: string;
