@@ -4,7 +4,7 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
+  class="relative isolate overflow-hidden bg-white py-24 md:min-h-screen md:flex md:flex-col"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
   <!-- Gradient overlay -->
@@ -129,24 +129,48 @@ import { siteConfig } from "../config";
       height="100%"
       stroke-width={0}></rect>
   </svg>
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
-      <h2
-        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
-      >
-        Hello! 👋
-      </h2>
+  <div
+    class="w-full md:flex-1 p-8 sm:p-12 md:p-24 pb-16 md:pb-32 flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-16"
+  >
+    {
+      siteConfig.hero.photo.src && (
+        <div class="relative shrink-0 order-first lg:order-last lg:ml-auto animate-fade-in animation-delay-200">
+          <div
+            class="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border-2"
+            style={`border-color: ${siteConfig.accentColor}55`}
+            aria-hidden="true"
+          />
+          <img
+            src={siteConfig.hero.photo.src}
+            alt={siteConfig.hero.photo.alt}
+            width={siteConfig.hero.photo.width}
+            height={siteConfig.hero.photo.height}
+            class="relative w-40 sm:w-48 md:w-56 lg:w-72 xl:w-80 2xl:w-96 3xl:w-[26rem] aspect-[4/5] rounded-2xl object-cover"
+          />
+        </div>
+      )
+    }
+    <div class="lg:flex-1 lg:max-w-4xl 3xl:max-w-6xl">
       <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+        class="text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl 3xl:text-9xl font-bold tracking-tight animate-fade-in"
+        style={`color: ${siteConfig.accentColor}`}
       >
-        I'm <span style={{ color: siteConfig.accentColor }}
-          >{siteConfig.name}</span
-        >
+        {siteConfig.name}
       </h1>
       <p
-        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
+        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 3xl:text-2xl font-medium text-gray-700 animate-fade-in animation-delay-200"
       >
         {siteConfig.title}
+      </p>
+      <div
+        class="mt-8 md:mt-10 w-[75px] h-[5px] rounded-full animate-fade-in animation-delay-400"
+        style={`background-color: ${siteConfig.accentColor}`}
+      >
+      </div>
+      <p
+        class="mt-8 md:mt-10 max-w-2xl 3xl:max-w-3xl text-pretty text-base sm:text-lg 3xl:text-xl leading-relaxed text-gray-600 animate-fade-in animation-delay-400"
+      >
+        {siteConfig.hero.note}
       </p>
     </div>
   </div>

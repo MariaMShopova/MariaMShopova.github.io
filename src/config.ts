@@ -10,6 +10,11 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/mariamshopova/",
     github: "",
   },
+  // The welcome note at the top of the page. Leave `photo.src` empty to hide the portrait.
+  hero: {
+    note: "Welcome and thank you for stopping by! This is my career portfolio: an overview of my professional experience and the advisory work I do alongside it, plus a few passion projects I've built that sit right where my expertise meets my interests. Make yourself at home and have a look around.",
+    photo: { src: "/portrait.jpg", alt: "Portrait of Maria Shopova", width: 1000, height: 1250 },
+  },
   // Cookie-free visitor counting via GoatCounter (https://www.goatcounter.com).
   // Paste your GoatCounter site code here to switch it on; leave empty for off.
   analytics: { goatcounterCode: "mariamshopova" },

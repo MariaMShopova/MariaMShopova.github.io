@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Extra breakpoint above Tailwind's 2xl, so the hero can scale up on very large monitors */
+@theme {
+  --breakpoint-3xl: 112.5rem;
+}
+
 /* The design is light-only. Without these two lines the page background is
    whatever the visitor's browser defaults to, which can turn dark. */
 html {
