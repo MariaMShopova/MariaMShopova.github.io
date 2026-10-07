@@ -20,7 +20,7 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={siteConfig.description} />
     <!-- Private by design: reachable only from the link on the resume, so keep it out of search results. -->
-    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
     {
       siteConfig.analytics.goatcounterCode && (
         <script
