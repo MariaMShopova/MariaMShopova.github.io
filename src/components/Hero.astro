@@ -130,7 +130,7 @@ import { siteConfig } from "../config";
       stroke-width={0}></rect>
   </svg>
   <div
-    class="w-full md:flex-1 p-8 sm:p-12 md:p-24 pb-16 md:pb-32 flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-16"
+    class="w-full max-w-[108rem] mx-auto md:flex-1 p-8 sm:p-12 md:p-24 pb-16 md:pb-32 flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-16"
   >
     {
       siteConfig.hero.photo.src && (
@@ -168,14 +168,15 @@ import { siteConfig } from "../config";
       >
       </div>
       <p
-        class="mt-8 md:mt-10 max-w-2xl 3xl:max-w-3xl text-pretty text-base sm:text-lg 3xl:text-xl leading-relaxed text-gray-600 animate-fade-in animation-delay-400"
+        class="mt-8 md:mt-10 max-w-2xl 3xl:max-w-4xl text-pretty text-base sm:text-lg 3xl:text-xl leading-relaxed text-gray-600 animate-fade-in animation-delay-400"
       >
         {siteConfig.hero.note}
       </p>
     </div>
   </div>
+  <div class="absolute bottom-0 left-0 right-0 animate-fade-in animation-delay-600">
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="mx-auto max-w-[108rem] p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700"
   >
     {
       siteConfig.social?.email && (
@@ -265,6 +266,7 @@ import { siteConfig } from "../config";
         </a>
       )
     }
+  </div>
   </div>
 </div>
 
