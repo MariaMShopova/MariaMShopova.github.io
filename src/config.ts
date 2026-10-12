@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Maria Shopova",
   title: "Turning strategy, data and AI into practical operating solutions",
   description:
-    "Portfolio of Maria Shopova: strategy and operations professional and builder of Lucid (an AI analytics app) and Ūtil (a team utilisation tool).",
+    "Portfolio of Maria Shopova: strategy and operations professional and builder of Lucid (an AI analytics app), Ūtil (a team utilisation tool) and Chattr (a unified inbox).",
   accentColor: "#3730a3",
   // Every link is optional: anything left out is hidden from the page.
   social: {
@@ -117,16 +117,20 @@ export const siteConfig = {
     },
     {
       name: "Chattr",
-      status: "In Development",
+      status: "Live",
       description:
-        "A unified inbox for Gmail, Outlook, Slack, Microsoft Teams and Telegram - the third app in the same suite as Lucid and Ūtil. Connect every real messaging account you use and read, and reply to, all of it from one calm inbox, without losing track of which identity you're replying from.",
+        "A unified inbox for Gmail, Outlook, Slack, Microsoft Teams and Telegram - the third app in the same suite as Lucid and Ūtil. Read and reply to every conversation from one calm inbox, with each platform keeping its own look when you open it. The example inbox is open to everyone; connecting your own accounts is limited to invited testers, because the platforms require business verification for public access.",
       highlights: [
-        "Real OAuth/API integrations for all five platforms, each built against the provider's own official docs - no scraping, no stored passwords",
-        "A capability matrix per provider so the UI only ever offers what that platform's API actually supports",
-        "Encrypted token storage and per-app database isolation, since this app handles real private message content",
-        "Reply identity protection: every composer makes explicit which connected account a message will send from",
+        "Real OAuth and API integrations built against each provider's official docs, with no scraping: Gmail, Outlook, Slack and Telegram are verified against live accounts. Microsoft Teams is built the same way but has not been tested live, because it needs a work Microsoft 365 tenant",
+        "Opening a conversation borrows that platform's real colours, fonts and layout (email cards, Slack rows, chat bubbles), with a clear badge for channel, meeting, group, direct message or email",
+        "Search, unread and platform filters, starring and archiving, a first-run getting-started guide, and a phone-friendly layout",
+        "Real push notifications that arrive even with Chattr closed, driven by a scheduled background check, with per-platform muting",
+        "Encrypted token storage, a separate database per app, and a Privacy Centre that explains what is stored and lets you download or delete all of it",
+        "A public example inbox that plays a guided tour of how each platform looks, and reply identity protection that makes explicit which account a message will send from",
       ],
-      skills: ["Next.js", "TypeScript", "Supabase", "OAuth", "Gmail API", "Microsoft Graph", "Slack API"],
+      link: "https://chattr-inbox.vercel.app/demo",
+      linkLabel: "See the live example",
+      skills: ["Next.js", "TypeScript", "Supabase", "OAuth", "Gmail API", "Microsoft Graph", "Slack API", "Tailwind CSS", "Vercel"],
     },
   ] as {
     name: string;
