@@ -1,6 +1,24 @@
 ---
 import { siteConfig } from "../config";
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+
+// Status colours carry meaning at a glance: green = live, yellow = still in
+// development. Any other status falls back to the site's accent colour.
+const statusPalette: Record<string, { color: string; bg: string; border: string; dot: string }> = {
+  live: { color: "#166534", bg: "#dcfce7", border: "#86efac", dot: "#16a34a" },
+  "in development": { color: "#854d0e", bg: "#fef9c3", border: "#fde047", dot: "#eab308" },
+};
+const statusStyle = (status: string) => {
+  const p = statusPalette[status.trim().toLowerCase()];
+  return p ?? { color: siteConfig.accentColor, bg: `${siteConfig.accentColor}10`, border: `${siteConfig.accentColor}55`, dot: siteConfig.accentColor };
+};
+
+// A highlight written as "Short lead - the detail" shows its lead in bold so
+// the list can be skimmed; anything without that shape renders as plain text.
+const splitHighlight = (text: string) => {
+  const i = text.indexOf(" - ");
+  return i > 0 && i <= 70 ? { lead: text.slice(0, i), rest: text.slice(i + 3) } : { lead: null, rest: text };
+};
 ---
 
 {
@@ -69,9 +87,13 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                             </span>
                             {project.status && (
                               <span
-                                class="px-2 py-0.5 rounded-full text-xs font-mono font-medium border"
-                                style={`color: ${siteConfig.accentColor}; border-color: ${siteConfig.accentColor}55; background-color: ${siteConfig.accentColor}10`}
+                                class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold border"
+                                style={`color: ${statusStyle(project.status).color}; border-color: ${statusStyle(project.status).border}; background-color: ${statusStyle(project.status).bg}`}
                               >
+                                <span
+                                  class="inline-block w-1.5 h-1.5 rounded-full"
+                                  style={`background-color: ${statusStyle(project.status).dot}`}
+                                />
                                 {project.status}
                               </span>
                             )}
@@ -96,7 +118,15 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                                   style={`background-color: ${siteConfig.accentColor}`}
                                 />
                                 <span class="text-sm sm:text-base text-gray-600 leading-relaxed">
-                                  {highlight}
+                                  {splitHighlight(highlight).lead ? (
+                                    <Fragment>
+                                      <strong class="font-semibold text-gray-900">{splitHighlight(highlight).lead}</strong>
+                                      {" - "}
+                                      {splitHighlight(highlight).rest}
+                                    </Fragment>
+                                  ) : (
+                                    highlight
+                                  )}
                                 </span>
                               </li>
                             ))}
@@ -104,12 +134,15 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                         )}
 
                         {project.link && project.linkLabel && (
-                          <p
-                            class="text-sm font-mono font-medium"
-                            style={{ color: siteConfig.accentColor }}
-                          >
-                            {project.linkLabel} →
-                          </p>
+                          <div>
+                            <span
+                              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm sm:text-base font-bold text-white shadow-sm transition-all duration-300 group-hover:gap-3 group-hover:shadow-lg"
+                              style={`background-color: ${siteConfig.accentColor}`}
+                            >
+                              {project.linkLabel}
+                              <span aria-hidden="true">→</span>
+                            </span>
+                          </div>
                         )}
 
                         {project.skills && project.skills.length > 0 && (
