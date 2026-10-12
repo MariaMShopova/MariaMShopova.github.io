@@ -135,7 +135,7 @@ export const siteConfig = {
         "A demo that shows itself - the public example inbox plays a guided tour with a live cursor through each platform, no sign-in needed",
       ],
       link: "https://chattr-inbox.vercel.app/demo",
-      linkLabel: "See the live example",
+      linkLabel: "Try the live app",
       skills: ["Next.js", "TypeScript", "Supabase", "OAuth", "Gmail API", "Microsoft Graph", "Slack API", "Tailwind CSS", "Vercel"],
     },
   ] as {

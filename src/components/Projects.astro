@@ -134,15 +134,12 @@ const splitHighlight = (text: string) => {
                         )}
 
                         {project.link && project.linkLabel && (
-                          <div>
-                            <span
-                              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm sm:text-base font-bold text-white shadow-sm transition-all duration-300 group-hover:gap-3 group-hover:shadow-lg"
-                              style={`background-color: ${siteConfig.accentColor}`}
-                            >
-                              {project.linkLabel}
-                              <span aria-hidden="true">→</span>
-                            </span>
-                          </div>
+                          <p
+                            class="text-sm sm:text-base font-mono font-bold transition-all duration-300 group-hover:translate-x-1"
+                            style={{ color: siteConfig.accentColor }}
+                          >
+                            {project.linkLabel} →
+                          </p>
                         )}
 
                         {project.skills && project.skills.length > 0 && (
